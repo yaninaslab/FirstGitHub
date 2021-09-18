@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 </head>
 <body>
-    <a href="../index.html">HOME</a>
-    <h1>This is the menu</h1>
+
+<h2>Images Side by Side</h2>
+<p>How to create side-by-side images with the CSS float property:</p>
+
+<div class="row">
+  <div class="column">
+    <img src="../images/1.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/2.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/3.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
 </body>
 </html>
